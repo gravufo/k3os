@@ -6,8 +6,8 @@ import (
 	"os"
 	"strings"
 
+	"github.com/gravufo/k3os/pkg/config"
 	"github.com/paultag/go-modprobe"
-	"github.com/rancher/k3os/pkg/config"
 	"github.com/sirupsen/logrus"
 )
 

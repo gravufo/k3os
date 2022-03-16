@@ -1,4 +1,4 @@
-module github.com/rancher/k3os
+module github.com/gravufo/k3os
 
 go 1.16
 

@@ -1,7 +1,7 @@
 package cc
 
 import (
-	"github.com/rancher/k3os/pkg/config"
+	"github.com/gravufo/k3os/pkg/config"
 	"github.com/urfave/cli"
 )
 

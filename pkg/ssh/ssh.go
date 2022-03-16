@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rancher/k3os/pkg/config"
-	"github.com/rancher/k3os/pkg/util"
+	"github.com/gravufo/k3os/pkg/config"
+	"github.com/gravufo/k3os/pkg/util"
 	"github.com/sirupsen/logrus"
 )
 
