@@ -12,7 +12,7 @@ import (
 	"syscall"
 	"time"
 
-	mountinfo "github.com/moby/moby/pkg/mount"
+	mountinfo "github.com/gravufo/k3os/pkg/mount"
 	"github.com/moby/moby/pkg/reexec"
 	"github.com/moby/sys/mount"
 	"github.com/pkg/errors"
@@ -209,10 +209,10 @@ func inFile() (string, uint64, error) {
 }
 
 func run(data string) error {
-	// TODO: replace github.com/moby/pkg/mountinfo
+	// TODO: use github.com/moby/sys/mountinfo
 	mounted, err := mountinfo.Mounted(data)
 	if err != nil {
-		return errors.Wrapf(err, "checking %s mounted", data)
+		return errors.Wrapf(err, "error checking if %s mounted", data)
 	}
 
 	if !mounted {

@@ -15,7 +15,6 @@ github.com/mattn/go-isatty
 github.com/mattn/go-shellwords
 # github.com/moby/moby v20.10.18+incompatible
 ## explicit
-github.com/moby/moby/pkg/mount
 github.com/moby/moby/pkg/reexec
 # github.com/moby/sys/mount v0.3.3
 ## explicit; go 1.16
