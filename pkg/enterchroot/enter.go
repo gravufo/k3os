@@ -12,8 +12,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/docker/docker/pkg/mount"
-	"github.com/docker/docker/pkg/reexec"
+	mountinfo "github.com/moby/moby/pkg/mount"
+	"github.com/moby/moby/pkg/reexec"
+	"github.com/moby/sys/mount"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 	"golang.org/x/sys/unix"
@@ -208,7 +209,8 @@ func inFile() (string, uint64, error) {
 }
 
 func run(data string) error {
-	mounted, err := mount.Mounted(data)
+	// TODO: replace github.com/moby/pkg/mountinfo
+	mounted, err := mountinfo.Mounted(data)
 	if err != nil {
 		return errors.Wrapf(err, "checking %s mounted", data)
 	}
@@ -271,7 +273,7 @@ func run(data string) error {
 		return errors.Wrap(err, "pivot_root failed")
 	}
 
-	if err := mount.ForceMount("", ".", "none", "rprivate"); err != nil {
+	if err := mount.Mount("", ".", "none", "rprivate"); err != nil {
 		return errors.Wrapf(err, "making . private %s", data)
 	}
 

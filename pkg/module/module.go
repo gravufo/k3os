@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	"github.com/gravufo/k3os/pkg/config"
-	"github.com/paultag/go-modprobe"
 	"github.com/sirupsen/logrus"
+	"pault.ag/go/modprobe"
 )
 
 const (
