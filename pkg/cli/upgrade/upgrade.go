@@ -134,7 +134,7 @@ func Run(_ *cli.Context) {
 
 	if upgradeK3OS {
 		if copied, err := system.CopyComponent(sourceDir, destinationDir, doRemount, "k3os"); err != nil {
-			logrus.Error(err)
+			logrus.Fatal(err)
 		} else if copied {
 			atLeastOneComponentCopied = true
 			doRemount = false
@@ -142,7 +142,7 @@ func Run(_ *cli.Context) {
 	}
 	if upgradeK3S {
 		if copied, err := system.CopyComponent(sourceDir, destinationDir, doRemount, "k3s"); err != nil {
-			logrus.Error(err)
+			logrus.Fatal(err)
 		} else if copied {
 			atLeastOneComponentCopied = true
 			doRemount = false
@@ -150,7 +150,7 @@ func Run(_ *cli.Context) {
 	}
 	if upgradeKernel {
 		if copied, err := system.CopyComponent(sourceDir, destinationDir, doRemount, "kernel"); err != nil {
-			logrus.Error(err)
+			logrus.Fatal(err)
 		} else if copied {
 			atLeastOneComponentCopied = true
 			doRemount = false

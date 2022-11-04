@@ -10,7 +10,7 @@ require (
 	github.com/rancher/mapper v0.0.0-20190814232720-058a8b7feb99
 	github.com/sirupsen/logrus v1.9.0
 	github.com/urfave/cli v1.22.10
-	golang.org/x/sys v0.0.0-20220915200043-7b5979e65e41
+	golang.org/x/sys v0.1.0
 	gopkg.in/freddierice/go-losetup.v1 v1.0.0-20170407175016-fc9adea44124
 )
 
@@ -18,12 +18,12 @@ require (
 	github.com/cpuguy83/go-md2man/v2 v2.0.2 // indirect
 	github.com/docker/go-units v0.5.0 // indirect
 	github.com/mattn/go-shellwords v1.0.12 // indirect
-	github.com/moby/moby v20.10.18+incompatible
+	github.com/moby/moby v20.10.21+incompatible
 	github.com/moby/sys/mount v0.3.3
 	github.com/moby/sys/mountinfo v0.6.2
 	github.com/rancher/wrangler v1.0.0 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
-	golang.org/x/term v0.0.0-20220722155259-a9ba230a4035
+	golang.org/x/term v0.1.0
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	pault.ag/go/modprobe v0.1.2
 	pault.ag/go/topsort v0.1.1 // indirect

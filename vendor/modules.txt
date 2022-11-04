@@ -13,7 +13,7 @@ github.com/mattn/go-isatty
 # github.com/mattn/go-shellwords v1.0.12
 ## explicit; go 1.13
 github.com/mattn/go-shellwords
-# github.com/moby/moby v20.10.18+incompatible
+# github.com/moby/moby v20.10.21+incompatible
 ## explicit
 github.com/moby/moby/pkg/reexec
 # github.com/moby/sys/mount v0.3.3
@@ -48,13 +48,13 @@ github.com/sirupsen/logrus
 # github.com/urfave/cli v1.22.10
 ## explicit; go 1.11
 github.com/urfave/cli
-# golang.org/x/sys v0.0.0-20220915200043-7b5979e65e41
+# golang.org/x/sys v0.1.0
 ## explicit; go 1.17
 golang.org/x/sys/internal/unsafeheader
 golang.org/x/sys/plan9
 golang.org/x/sys/unix
 golang.org/x/sys/windows
-# golang.org/x/term v0.0.0-20220722155259-a9ba230a4035
+# golang.org/x/term v0.1.0
 ## explicit; go 1.17
 golang.org/x/term
 # gopkg.in/freddierice/go-losetup.v1 v1.0.0-20170407175016-fc9adea44124

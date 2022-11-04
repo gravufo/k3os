@@ -56,6 +56,7 @@ func CopyComponent(src, dst string, remount bool, key string) (bool, error) {
 		return false, nil
 	}
 	if remount {
+		logrus.Debugf("remounting %s as read-write", dst)
 		if err := mount.Mount("", dst, "none", "remount,rw"); err != nil {
 			return false, err
 		}
